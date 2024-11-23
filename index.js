@@ -1,4 +1,4 @@
-import { getAllProducts } from "./api/alimente.js";
+import { getAllProducts } from "./api/products.js";
 import { mapProductToCard } from "./utils/layout.js";
 
 document.addEventListener("DOMContentLoaded", displayProducts);

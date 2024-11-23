@@ -4,7 +4,7 @@ import {
   addNewProduct,
   updateProduct,
   deleteProduct,
-} from "../api/alimente.js";
+} from "../api/products.js";
 import { mapProductToAdminTableRow } from "../utils/layout.js";
 const productsTableBody = document
   .getElementById("products-table")

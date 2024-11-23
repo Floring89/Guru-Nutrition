@@ -1,0 +1,73 @@
+.navbar {
+    background-color: var(--secondary-bg-color); /* White background for the navbar */
+    border-bottom: 2px solid var(--accent-color); /* Orange underline to highlight the navbar */
+    padding: 15px 20px; /* Adds space inside the navbar */
+    display: flex; /* Makes the navbar items align horizontally */
+    justify-content: space-between; /* Pushes logo to one side and links to the other */
+    align-items: center; /* Vertically centers the logo and links */
+    box-shadow: 0 2px 4px var(--shadow-color); /* Subtle shadow for depth */
+    padding: 0 100px; /* 0 padding on vertical axis, 100px on horizontal axis*/
+}
+  
+  .navbar .logo img {
+    width: 100px; /* Fixed width for the logo image */
+    transition: transform var(--transition); /* Smooth hover effect for the logo */
+  }
+  
+  .navbar .logo img:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  }
+  
+  .nav-links {
+    display: flex; /* Aligns links in a horizontal row */
+    gap: 20px; /* Adds space between links */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Removes the underline from links */
+    color: var(--dark-color); /* Black for text color */
+    font-size: 18px; /* Sets the text size */
+    font-weight: bold; /* Makes the text bold */
+    display: flex; /* Allows alignment of icons and text */
+    align-items: center; /* Vertically centers icons with text */
+    gap: 5px; /* Adds space between the icon and text */
+    padding: 8px 12px; /* Adds padding inside each link */
+    border-radius: var(--border-radius); /* Rounds the corners of links */
+    transition: var(--transition); /* Smooth hover effect */
+  }
+  
+  .nav-links a:hover {
+    background-color: var(--accent-color); /* Highlights the link with orange on hover */
+    color: white; /* Changes the text color to white for contrast */
+    transform: translateY(-2px); /* Moves the link slightly upwards */
+    box-shadow: 0 2px 8px var(--shadow-color); /* Adds a slight shadow on hover */
+  }
+  
+  .nav-links a i {
+    font-size: 18px; /* Sets the icon size */
+  }
+  
+  /* Responsive styling for the navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stacks the logo and links vertically */
+      align-items: center; /* Centers the navbar content */
+      gap: 15px; /* Adds space between the logo and links */
+      text-align: center; /* Centers the links for smaller screens */
+    }
+  
+    .nav-links {
+      flex-wrap: wrap; /* Allows links to wrap onto multiple lines */
+      justify-content: center; /* Centers the links in the navbar */
+      gap: 10px; /* Reduces the gap between links */
+    }
+  
+    .nav-links a {
+      font-size: 16px; /* Reduces the font size for smaller screens */
+    }
+  
+    .navbar .logo img {
+      width: 80px; /* Shrinks the logo for smaller screens */
+    }
+  }
+  

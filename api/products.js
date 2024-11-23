@@ -1,4 +1,4 @@
-const URL = "https://670fe5a3a85f4164ef2c6202.mockapi.io/Alimente";
+const URL = "https://670fe5a3a85f4164ef2c6202.mockapi.io/products";
 
 export async function getAllProducts() {
   const response = await fetch(URL);
