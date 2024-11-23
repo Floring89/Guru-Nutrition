@@ -1,0 +1,87 @@
+/* Styling for the cart items container */
+.cart-items {
+    max-width: 700px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the container on the page */
+    padding: 20px; /* Add spacing inside the container */
+    background-color: var(--secondary-bg-color); /* White background for the cart container */
+    border-radius: var(--border-radius); /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px var(--shadow-color); /* Subtle shadow for depth */
+    border: 1px solid var(--shadow-color); /* Light border for separation */
+  }
+  
+  /* Styling for each cart item */
+  .cart-items .flex-row {
+    display: flex; /* Flex layout for alignment */
+    justify-content: space-between; /* Distributes space between elements */
+    align-items: center; /* Vertically centers the elements */
+    padding: 10px 0; /* Adds spacing between rows */
+    border-bottom: 1px solid #ddd; /* Subtle border to separate items */
+  }
+  
+  /* Remove border for the last item */
+  .cart-items .flex-row:last-child {
+    border-bottom: none;
+  }
+  
+  /* Styling for the cart item image */
+  .cart-items img {
+    width: 50px; /* Fixed size for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Slight rounding for a polished look */
+  }
+  
+  /* Styling for item details (name, price, quantity) */
+  .cart-items span {
+    font-size: 14px; /* Readable font size for smaller details */
+    color: var(--text-color); /* Neutral text color for readability */
+    margin: 0 10px; /* Space around each span */
+  }
+  
+  /* Styling for buttons inside the cart */
+  .cart-items button {
+    padding: 5px 10px; /* Comfortable padding for buttons */
+    font-size: 14px; /* Readable text size for buttons */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners for modern look */
+    cursor: pointer; /* Pointer cursor for hover state */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  }
+  
+  /* Increase and Decrease buttons */
+  .cart-items button.increase,
+  .cart-items button.decrease {
+    background-color: var(--accent-color); /* Vibrant orange for action buttons */
+    color: white; /* White text for contrast */
+  }
+  
+  .cart-items button.increase:hover,
+  .cart-items button.decrease:hover {
+    background-color: #e63e00; /* Darker orange for hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+  }
+  
+  /* Delete button styling */
+  .cart-items button.delete {
+    background-color: #f44336; /* Red for delete action */
+    color: white; /* White text for contrast */
+  }
+  
+  .cart-items button.delete:hover {
+    background-color: #d32f2f; /* Darker red for hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+  }
+  
+  /* Styling for the cart total container */
+  .cart-total {
+    margin-top: 20px; /* Space above the total container */
+    font-size: 18px; /* Slightly larger font size for emphasis */
+    font-weight: bold; /* Makes the total stand out */
+    text-align: center; /* Centers the total text */
+    color: var(--dark-color); /* Strong dark color for emphasis */
+    padding: 10px; /* Adds space inside the total container */
+    background-color: #fef9f5; /* Light orange background to highlight */
+    border: 1px solid var(--accent-color); /* Border to match the cart design */
+    border-radius: var(--border-radius); /* Rounded corners */
+    box-shadow: 0 2px 6px var(--shadow-color); /* Subtle shadow for depth */
+  }
+  
