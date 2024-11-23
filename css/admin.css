@@ -1,0 +1,184 @@
+/* Table Styling */
+table {
+    width: 100%; /* Full width for responsiveness */
+    border-collapse: collapse; /* Removes extra space between table cells */
+    margin: 20px 0; /* Adds spacing above and below the table */
+    font-size: 16px; /* Comfortable text size for readability */
+    text-align: left; /* Aligns text to the left */
+    background-color: var(--secondary-bg-color); /* White background for the table */
+    border-radius: var(--border-radius); /* Rounds the table corners */
+    overflow: hidden; /* Ensures rounded corners are applied properly */
+    box-shadow: 0 4px 10px var(--shadow-color); /* Subtle shadow for a polished look */
+    border: 1px solid var(--shadow-color); /* Light border for definition */
+  }
+  
+  /* Table Header Styling */
+  th {
+    background-color: var(--accent-color); /* Vibrant orange header background */
+    color: white; /* White text for strong contrast */
+    padding: 15px; /* Adds padding inside the headers */
+    font-weight: bold; /* Makes the header text bold */
+    text-transform: uppercase; /* Capitalizes all header text */
+    font-size: 14px; /* Slightly smaller font size for headers */
+    border-bottom: 3px solid #e63e00; /* Slightly darker orange line for depth */
+  }
+  
+  /* Styling for table rows */
+  tr:nth-child(odd) {
+    background-color: #fafafa; /* Light gray background for odd rows */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ffffff; /* White background for even rows */
+  }
+  
+  tr:hover {
+    background-color: #ffe6d5; /* Light orange hover effect for all rows */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  /* Styling for table cells */
+  td {
+    padding: 15px; /* Adds padding inside cells */
+    vertical-align: middle; /* Centers content vertically in the cell */
+    color: var(--text-color); /* Neutral text color for readability */
+    border-bottom: 1px solid #ddd; /* Subtle separator between rows */
+  }
+  
+  /* Image styling inside table cells */
+  td img {
+    border-radius: 8px; /* Rounds image corners */
+    border: 1px solid #ddd; /* Thin border for better definition */
+    width: 50px; /* Fixed size for images */
+    height: auto; /* Maintains the aspect ratio */
+  }
+  
+  /* Button Styling */
+  .edit-btn, .delete-btn {
+    padding: 10px 15px; /* Adds comfortable spacing inside the button */
+    font-size: 14px; /* Comfortable text size for the buttons */
+    color: white; /* White text for contrast */
+    border: none; /* Removes default button border */
+    border-radius: 8px; /* Rounds button corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition for hover effect */
+  }
+  
+  .edit-btn {
+    background-color: #4caf50; /* Green background for edit button */
+  }
+  
+  .edit-btn:hover {
+    background-color: #45a049; /* Darker green for hover */
+  }
+  
+  .delete-btn {
+    background-color: red; /* Red background for delete button */
+  }
+  
+  .delete-btn:hover {
+    background-color: #e63e00; /* Darker orange for hover */
+  }
+  
+  /* Responsive Styling for Smaller Screens */
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px; /* Reduces text size for smaller screens */
+    }
+  
+    td {
+      padding: 10px; /* Reduces padding for better spacing */
+    }
+  
+    td img {
+      width: 40px; /* Shrinks image size */
+    }
+  
+    .edit-btn, .delete-btn {
+      font-size: 12px; /* Smaller button text size */
+      padding: 8px 12px; /* Adjusts button padding for smaller screens */
+    }
+  }
+  
+  /* General form styling */
+form#product-form {
+    max-width: 600px; /* Limits the width for better readability */
+    margin: 20px auto; /* Centers the form on the page */
+    padding: 20px; /* Adds spacing inside the form */
+    background-color: var(--secondary-bg-color); /* White background for the form */
+    border-radius: var(--border-radius); /* Rounds the corners */
+    box-shadow: 0 4px 10px var(--shadow-color); /* Adds a subtle shadow for depth */
+    border: 1px solid var(--shadow-color); /* Thin border for definition */
+  }
+  
+  /* Styling for form groups */
+  form#product-form div {
+    margin-bottom: 20px; /* Adds space between form fields */
+  }
+  
+  /* Label styling */
+  form#product-form label {
+    display: block; /* Ensures labels are on their own line */
+    font-size: 14px; /* Smaller font size for labels */
+    font-weight: bold; /* Makes labels stand out */
+    margin-bottom: 8px; /* Adds space between label and input */
+    color: var(--text-color); /* Neutral text color for readability */
+  }
+  
+  /* Input field styling */
+  form#product-form input[type="text"] {
+    width: 100%; /* Full width of the form container */
+    padding: 10px; /* Adds spacing inside the input */
+    font-size: 16px; /* Comfortable text size for inputs */
+    border: 1px solid #ddd; /* Subtle border for inputs */
+    border-radius: var(--border-radius); /* Rounds input corners */
+    box-shadow: inset 0 2px 4px var(--shadow-color); /* Slight inner shadow for depth */
+    transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+  }
+  
+  /* Focus effect for inputs */
+  form#product-form input[type="text"]:focus {
+    outline: none; /* Removes default outline */
+    border-color: var(--accent-color); /* Highlights input with orange on focus */
+    box-shadow: 0 0 4px var(--accent-color); /* Adds a subtle glow effect */
+  }
+  
+  /* Button styling */
+  form#product-form button#save-btn {
+    display: inline-block; /* Ensures the button fits its content */
+    padding: 12px 20px; /* Comfortable padding for buttons */
+    font-size: 16px; /* Comfortable button text size */
+    font-weight: bold; /* Makes button text stand out */
+    text-transform: uppercase; /* Capitalizes button text */
+    color: white; /* White text for contrast */
+    background-color: var(--accent-color); /* Vibrant orange background */
+    border: none; /* Removes default border */
+    border-radius: var(--border-radius); /* Rounds button corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  }
+  
+  /* Hover effect for button */
+  form#product-form button#save-btn:hover {
+    background-color: #e63e00; /* Darker orange for hover */
+    transform: translateY(-2px); /* Slight upward movement for interactivity */
+    box-shadow: 0 4px 10px var(--shadow-color); /* Adds a shadow for depth */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    form#product-form {
+      padding: 15px; /* Reduces padding for smaller screens */
+    }
+  
+    form#product-form input[type="text"] {
+      font-size: 14px; /* Slightly smaller input font size */
+      padding: 8px; /* Adjusts input padding for smaller screens */
+    }
+  
+    form#product-form button#save-btn {
+      font-size: 14px; /* Reduces button text size */
+      padding: 10px 15px; /* Adjusts button padding */
+    }
+  }
+  
